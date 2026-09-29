@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Pessoal para Desenvolvedor Web, Lucas Mol.">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="icon" type="imagem/png" href="./images/main-icon.png"/>
+    <title>Lucas Mol</title>
+</head>
+<body>
+    <header class="header__container">
+        <div class="header__wrapper">
+            <div class="header__content">
+                <div class="logo">
+                    <a href="#section__home" data-menu-top="0">
+                        <p class="logo__lucas">Lucas</p>
+                        <p class="logo__mol">Mol</p>
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li ><a href="#section__skills" data-menu-top="317.2">Habilidades</a></li>
+                        <li ><a href="#section__contacts" data-menu-top="635">Contato</a></li>
+                    </ul>
+                    <a href="https://github.com/Lucas-Mol" target="_blank"><img class="header__nav-logos" src="./images/github-icon-90.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/lucasmolpro/" target="_blank"><img class="header__nav-logos" src="./images/linkedin-icon-100.png" alt="LinkedIn"></a>
+                </nav>  
+            </div>
+        </div>
+        <div class="header__bottom-line"></div>
+    </header>
+    <main class="main" data-0="left: 0%;" data-635="left: -200%;">
+        <section id="section__home" class="section__home">
+            <div class="geometric__shapes">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="ellipse-one"></div>
+                <div class="ellipse-two"></div>
+                <p class="binary-code-text">01001000<br>01101100<br>01101111</p>
+            </div>
+            <div class="main__wrapper">
+                <div class="main__container-text">
+                    <p id="mainText"></p>
+                </div>
+            </div>
+        </section>
+        <section id="section__skills" class="section__skills">
+            <div class="geometric__shapes">
+                <div class="trapeze-box"><img class="trapeze"src="./images/trapeze.png"></div>
+                <div class="line-one"></div>
+                <p class="binary-code-text">01100101<br>01101100<br>00100001</p>
+            </div>
+            <div class="main__wrapper">
+                <div class="main__container-text">
+                    <h2 id="skillText" class="skills-title"></h2>
+                    <p>Sou um Desenvolvedor Full Stack Junior, entusiasta da tecnologia e
+                        em busca por mais <strong>Conhecimento</strong> & <strong>Experiências</strong>.
+                    </p>
+                    <p>Confira algumas das tecnologias que utilizo:</p>
+                    <div class="skills__box">
+                        <ul>
+                            <li><img id="icon-html" src="./images/html-icon-90.png" alt="HTML 5"></li>
+                            <li><img id="icon-css" src="./images/css-icon-90.png" alt="CSS 3"></li>
+                            <li><img id="icon-js" src="./images/js-icon-90.png" alt="JavaScript"></li>
+                            <li><img id="icon-java" src="./images/java-icon-90.png" alt="Java"></li>
+                            <li><img id="icon-git" src="./images/git-icon-90.png" alt="Git"></li>
+                            <li><img id="icon-cpp" src="./images/cpp-icon-90.png" alt="C++"></li>
+                            <li><img id="icon-clojure" src="./images/clojure-icon-90.png" alt="Clojure"></li>
+                            <li><img id="icon-db" src="./images/db-icon-100.png" alt="Banco de Dados"></li>
+                            <li><img id="icon-nodejs" src="./images/nodejs-icon-90.png" alt="Node.js"></li>
+                            <li><img id="icon-scrum" src="./images/scrum-icon-90.png" alt="Scrum & Metodologias Ágeis"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-demo__box">
+                    <img class="profile-photo" src="./images/profile-photo.png">
+                    <div id="demo-box" class="demo__box">
+                        <h3 id="demo-title">Saiba mais</h3>
+                        <p id="demo-description">Deslize sobre os ícones e descubra mais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section__contact" class="section__contact">
+            <div class="main__wrapper">
+                <div class="main__container-text">
+                    <h2>Contato</h2> 
+                    <p>Gostou do meu trabalho?</p>
+                    <p>Entre em contato<br>comigo.</p>  
+                </div>
+                <form class="form__container">
+                    <fieldset>
+                        <label for="name-input">Nome</label>
+                        <input id="name-input" type="text" required="true">
+                        <label for="email-input">E-mail</label>
+                        <input id="email-input" type="email" required="true">
+                        <textarea id="message-textarea" placeholder="Escreva sua mensagem..." required="true"></textarea>
+                        <button id="submitButton" type="submit"><strong>Enviar</strong></button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <section class="section__mobile">
+        <div class="main__wrapper">
+            <div class="main__container-text">
+                <h2>Me Desculpe :(</h2> 
+                <p>O portfólio ainda não foi adaptado para dispositivos móveis.</p> 
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="./scripts/skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+
+        skrollr.menu.init(s)
+    </script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+</body>
+</html>
